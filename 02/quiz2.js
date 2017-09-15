@@ -3,9 +3,8 @@ var sum = 0;
 function start(){
   var who = prompt("더할값 적어줘요");
 
-  if (who == "") {
+  if (who == null) {
     sumPrint();
-
   }
   sum += parseInt(who,10);
 }
@@ -13,6 +12,6 @@ function start(){
 var id = setInterval(start, 100);
 
 var sumPrint = function(){
-  console.log(sum);
+  prompt(sum)
   clearInterval(id);
 }
