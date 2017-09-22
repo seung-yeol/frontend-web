@@ -1,7 +1,7 @@
-var board = document.getElementById("board");
 var currentRed;
 var previousColor;
 
+var board = document.getElementById("board");
 board.style.height = '400px';
 board.style.width = '400px';
 board.style.border='10px solid gray';
@@ -17,10 +17,6 @@ for(var i=0; i<4; i++){
       newTile('white');
     }
   }
-}
-
-var newListener = function(v){
-  event.style.backgroundColor='red';
 }
 
 function newTile(color){
