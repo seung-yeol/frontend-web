@@ -21,7 +21,7 @@ for(var i=0; i<4; i++){
 
 var newListener = function(v){
   console.log("뭐지");
-  event.style.backgroundColor='red'
+  event.style.backgroundColor='red';
 }
 
 function newTile(color){
@@ -37,10 +37,10 @@ function newTile(color){
     }
 
     v.style.backgroundColor = 'red';
-    
+
     currentRed = v;
     previousColor = color;
-  } )
+  } );
 
   board.appendChild(v);
 }
