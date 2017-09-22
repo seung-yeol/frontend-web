@@ -20,7 +20,6 @@ for(var i=0; i<4; i++){
 }
 
 var newListener = function(v){
-  console.log("뭐지");
   event.style.backgroundColor='red';
 }
 
@@ -30,14 +29,11 @@ function newTile(color){
   v.style.width = '100px';
   v.style.float = 'left';
   v.style.backgroundColor = color;
-
   v.addEventListener('click', function(){
     if (currentRed != null) {
       currentRed.style.backgroundColor = previousColor;
     }
-
     v.style.backgroundColor = 'red';
-
     currentRed = v;
     previousColor = color;
   } );
