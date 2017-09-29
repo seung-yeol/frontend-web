@@ -8,9 +8,9 @@ board.style.border='10px solid gray';
 
 document.body.appendChild(board);
 
-for(var i=0; i<4; i++){
-  for(var j=0; j<4; j++){
-    if((i+j)%2 == 1){
+for(var i = 0 ; i < 4 ; i++){
+  for(var j = 0 ; j < 4 ; j++){
+    if( ( i+j ) % 2 == 1){
       newTile('black');
     }
     else {
