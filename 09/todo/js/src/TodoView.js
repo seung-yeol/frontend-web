@@ -1,6 +1,4 @@
 (function($, app){
-
-
   var $listDom = $('#todoList');
   var todoTemplateHtml = $('#todoTemplate').html();
 

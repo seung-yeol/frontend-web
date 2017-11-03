@@ -1,13 +1,10 @@
 (function($, global, app){
 
-
   var $todoStringField = $('#todoString');
   var $listDom = $('#todoList');
 
-
   // todoStringField.addEventListener('keyup', addTodo);
   $todoStringField.on('keyup', app.view.addTodo );
-
 
   // //삭제버튼 이벤트 잡기 위해 상위에서 이벤트 listen 하기
   $listDom.on('click', '.delete', function(event){
